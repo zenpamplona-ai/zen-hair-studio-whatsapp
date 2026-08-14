@@ -1,0 +1,19 @@
+No editor (grande, onde diz "Enter file contents here"):
+
+Cola ISSO:
+
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api/$1"
+    }
+  ]
+}
